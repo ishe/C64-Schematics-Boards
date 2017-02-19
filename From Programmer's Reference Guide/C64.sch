@@ -19643,6 +19643,61 @@ high speed (Philips)</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="frames">
+<description>&lt;b&gt;Frames for Sheet and Layout&lt;/b&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="FRAME_D_L">
+<frame x1="-431.8" y1="0" x2="431.8" y2="558.8" columns="16" rows="11" layer="94" border-bottom="no"/>
+</symbol>
+<symbol name="DOCFIELD">
+<wire x1="0" y1="0" x2="71.12" y2="0" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="87.63" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="0" y1="5.08" x2="71.12" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="0" y1="5.08" x2="0" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="71.12" y2="0" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="0" x2="101.6" y2="0" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="15.24" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="15.24" x2="0" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="5.08" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="5.08" x2="101.6" y2="0" width="0.1016" layer="94"/>
+<wire x1="0" y1="15.24" x2="0" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="0" y2="35.56" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="0" y1="22.86" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="0" y1="22.86" x2="0" y2="35.56" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="22.86" x2="101.6" y2="15.24" width="0.1016" layer="94"/>
+<text x="1.27" y="1.27" size="2.54" layer="94">Date:</text>
+<text x="12.7" y="1.27" size="2.54" layer="94">&gt;LAST_DATE_TIME</text>
+<text x="72.39" y="1.27" size="2.54" layer="94">Sheet:</text>
+<text x="86.36" y="1.27" size="2.54" layer="94">&gt;SHEET</text>
+<text x="88.9" y="11.43" size="2.54" layer="94">REV:</text>
+<text x="1.27" y="19.05" size="2.54" layer="94">TITLE:</text>
+<text x="1.27" y="11.43" size="2.54" layer="94">Document Number:</text>
+<text x="17.78" y="19.05" size="2.54" layer="94">&gt;DRAWING_NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="FRAME_D_L" prefix="FRAME" uservalue="yes">
+<description>&lt;b&gt;FRAME&lt;/b&gt; D Size , 22 x 34 INCH, Landscape&lt;p&gt;</description>
+<gates>
+<gate name="G$1" symbol="FRAME_D_L" x="0" y="0" addlevel="always"/>
+<gate name="G$2" symbol="DOCFIELD" x="325.12" y="0" addlevel="always"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -19662,7 +19717,7 @@ high speed (Philips)</description>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="V2" library="supply2" deviceset="VCC" device=""/>
 <part name="V9" library="supply2" deviceset="+12V" device=""/>
-<part name="R7" library="rcl" deviceset="R-EU_" device="0204/2V" value="10K"/>
+<part name="R7" library="rcl" deviceset="R-EU_" device="0204/2V" value="10 K"/>
 <part name="C37" library="rcl" deviceset="C-EU" device="075-032X103" value="1000 pF"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
@@ -19724,8 +19779,8 @@ high speed (Philips)</description>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="C20" library="rcl" deviceset="C-EU" device="075-032X103" value="0.22 uF 100V"/>
 <part name="C21" library="rcl" deviceset="C-EU" device="075-032X103" value="0.22 uF 100V"/>
-<part name="C98" library="rcl" deviceset="C-EU" device="075-032X103" value="0.1uF"/>
-<part name="C99" library="rcl" deviceset="C-EU" device="075-032X103" value="0.1uF"/>
+<part name="C98" library="rcl" deviceset="C-EU" device="075-032X103" value="0.1 uF"/>
+<part name="C99" library="rcl" deviceset="C-EU" device="075-032X103" value="0.1 uF"/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
 <part name="SW1" library="switch-misc" deviceset="9077-2" device="" value=""/>
@@ -19836,25 +19891,25 @@ high speed (Philips)</description>
 <part name="U27" library="74xx-us" deviceset="74*08" device="N" technology="LS"/>
 <part name="U8" library="74xx-us" deviceset="74*06" device="N"/>
 <part name="GND59" library="supply1" deviceset="GND" device=""/>
-<part name="R34" library="rcl" deviceset="R-EU_" device="0204/2V" value="47K"/>
+<part name="R34" library="rcl" deviceset="R-EU_" device="0204/2V" value="47 K"/>
 <part name="U20" library="0RB_Lineair" deviceset="556DIGITAL" device=""/>
 <part name="C24" library="rcl" deviceset="CPOL-EU" device="E3.5-10" value="10 uF 25V"/>
-<part name="R50" library="rcl" deviceset="R-EU_" device="0204/2V" value="1M"/>
+<part name="R50" library="rcl" deviceset="R-EU_" device="0204/2V" value="1 M"/>
 <part name="C105" library="rcl" deviceset="C-EU" device="075-032X103" value="0.1 uF"/>
 <part name="GND60" library="supply1" deviceset="GND" device=""/>
 <part name="V17" library="supply2" deviceset="VCC" device=""/>
 <part name="GND61" library="supply1" deviceset="GND" device=""/>
 <part name="R33" library="rcl" deviceset="R-EU_" device="0204/2V" value="47K"/>
-<part name="R41" library="rcl" deviceset="R-EU_" device="0204/2V" value="1M"/>
+<part name="R41" library="rcl" deviceset="R-EU_" device="0204/2V" value="1 M"/>
 <part name="C38" library="rcl" deviceset="C-EU" device="075-032X103" value="51 pF"/>
 <part name="GND62" library="supply1" deviceset="GND" device=""/>
 <part name="C23" library="rcl" deviceset="C-EU" device="075-032X103" value="360 pF"/>
-<part name="R35" library="rcl" deviceset="R-EU_" device="0204/2V" value="470K"/>
+<part name="R35" library="rcl" deviceset="R-EU_" device="0204/2V" value="470 K"/>
 <part name="GND63" library="supply1" deviceset="GND" device=""/>
 <part name="R26" library="rcl" deviceset="R-EU_" device="0204/2V" value="75"/>
 <part name="R27" library="pot" deviceset="TRIM_EU-" device="CA6H" value="2 K Trim Pot"/>
 <part name="V18" library="supply2" deviceset="+5V/2" device="" value="+5Vc"/>
-<part name="C58" library="rcl" deviceset="C-EU" device="075-032X103" value="0.1uF"/>
+<part name="C58" library="rcl" deviceset="C-EU" device="075-032X103" value="0.1 uF"/>
 <part name="FB16" library="0RB_Passive" deviceset="FERRIT" device=""/>
 <part name="Y1" library="crystal" deviceset="HC49TL-H" device="" value="17.73 MHz"/>
 <part name="C70" library="rcl" deviceset="C-EU" device="075-032X103" value="10 pF 5%"/>
@@ -19868,23 +19923,23 @@ high speed (Philips)</description>
 <part name="V20" library="supply2" deviceset="+5V/2" device="" value="+5Vc"/>
 <part name="V21" library="supply2" deviceset="+5V/2" device="" value="+5Vc"/>
 <part name="U31" library="0RB_TTL" deviceset="74629" device=""/>
-<part name="R23" library="rcl" deviceset="R-EU_" device="0204/2V" value="1K"/>
+<part name="R23" library="rcl" deviceset="R-EU_" device="0204/2V" value="1 K"/>
 <part name="R22" library="rcl" deviceset="R-EU_" device="0204/2V" value="1.5 K"/>
 <part name="C87" library="rcl" deviceset="C-EU" device="075-032X103" value="0.1 uF"/>
 <part name="GND66" library="supply1" deviceset="GND" device=""/>
 <part name="C86" library="rcl" deviceset="C-EU" device="075-032X103" value="39 pF 50V 5%"/>
 <part name="Q7" library="transistor-small-signal" deviceset="2N2222" device=""/>
-<part name="R19" library="rcl" deviceset="R-EU_" device="0204/2V" value="15K"/>
+<part name="R19" library="rcl" deviceset="R-EU_" device="0204/2V" value="15 K"/>
 <part name="C85" library="rcl" deviceset="C-EU" device="075-032X103" value="0.47 uF"/>
 <part name="R17" library="rcl" deviceset="R-EU_" device="0204/2V" value="1.2 K"/>
-<part name="R16" library="rcl" deviceset="R-EU_" device="0204/2V" value="1K"/>
+<part name="R16" library="rcl" deviceset="R-EU_" device="0204/2V" value="1 K"/>
 <part name="C84" library="rcl" deviceset="C-EU" device="075-032X103" value="0.1 uF"/>
 <part name="GND67" library="supply1" deviceset="GND" device=""/>
 <part name="V22" library="supply2" deviceset="+5V/2" device="" value="+5Vc"/>
 <part name="FB17" library="0RB_Passive" deviceset="FERRIT" device=""/>
 <part name="GND68" library="supply1" deviceset="GND" device=""/>
 <part name="C36" library="rcl" deviceset="C-EU" device="075-032X103" value="20 pF 50V"/>
-<part name="R31" library="rcl" deviceset="R-EU_" device="0204/2V" value="1K"/>
+<part name="R31" library="rcl" deviceset="R-EU_" device="0204/2V" value="1 K"/>
 <part name="V23" library="supply2" deviceset="VCC" device=""/>
 <part name="U3" library="0RB_Memory" deviceset="2364" device=""/>
 <part name="U5" library="0RB_Memory" deviceset="2332" device=""/>
@@ -19903,9 +19958,9 @@ high speed (Philips)</description>
 <part name="FB8" library="0RB_Passive" deviceset="FERRIT" device=""/>
 <part name="FB7" library="0RB_Passive" deviceset="FERRIT" device=""/>
 <part name="FB9" library="0RB_Passive" deviceset="FERRIT" device=""/>
-<part name="R29" library="rcl" deviceset="R-EU_" device="0204/2V" value="1K"/>
-<part name="R30" library="rcl" deviceset="R-EU_" device="0204/2V" value="1K"/>
-<part name="R28" library="rcl" deviceset="R-EU_" device="0204/2V" value="1K"/>
+<part name="R29" library="rcl" deviceset="R-EU_" device="0204/2V" value="1 K"/>
+<part name="R30" library="rcl" deviceset="R-EU_" device="0204/2V" value="1 K"/>
+<part name="R28" library="rcl" deviceset="R-EU_" device="0204/2V" value="1 K"/>
 <part name="V26" library="supply2" deviceset="VCC" device=""/>
 <part name="CN2" library="0RB_Commodore" deviceset="USERPORT-C64-EDGE" device=""/>
 <part name="C96" library="rcl" deviceset="C-EU" device="075-032X103" value="0.1 uF"/>
@@ -19942,15 +19997,15 @@ high speed (Philips)</description>
 <part name="FB2" library="0RB_Passive" deviceset="FERRIT" device=""/>
 <part name="R2" library="rcl" deviceset="R-EU_" device="0204/2V" value="1.5 K"/>
 <part name="V30" library="supply2" deviceset="+9V" device=""/>
-<part name="R3" library="rcl" deviceset="R-EU_" device="0204/2V" value="10K"/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="0204/2V" value="10 K"/>
 <part name="GND78" library="supply1" deviceset="GND" device=""/>
 <part name="GND79" library="supply1" deviceset="GND" device=""/>
-<part name="R4" library="rcl" deviceset="R-EU_" device="0204/2V" value="1K"/>
+<part name="R4" library="rcl" deviceset="R-EU_" device="0204/2V" value="1 K"/>
 <part name="V31" library="supply2" deviceset="VCC" device=""/>
 <part name="GND80" library="supply1" deviceset="GND" device=""/>
 <part name="CN6" library="0RB_Commodore" deviceset="EXPANSIONPORT-C64" device="" value="EXPANSIONPORT"/>
 <part name="RP3" library="0RB_Passive" deviceset="RP8" device="" value="3.3 K"/>
-<part name="R36" library="rcl" deviceset="R-EU_" device="0204/2V" value="1K"/>
+<part name="R36" library="rcl" deviceset="R-EU_" device="0204/2V" value="1 K"/>
 <part name="V32" library="supply2" deviceset="VCC" device=""/>
 <part name="V34" library="supply2" deviceset="VCC" device=""/>
 <part name="RP4" library="0RB_Passive" deviceset="RP9" device="" value="3.3 K"/>
@@ -20023,7 +20078,7 @@ high speed (Philips)</description>
 <part name="C4" library="rcl" deviceset="C-EU" device="075-032X103" value="0.47 uF"/>
 <part name="V54" library="supply2" deviceset="VCC" device=""/>
 <part name="GND103" library="supply1" deviceset="GND" device=""/>
-<part name="C5" library="rcl" deviceset="C-EU" device="075-032X103" value="0.47uF"/>
+<part name="C5" library="rcl" deviceset="C-EU" device="075-032X103" value="0.47 uF"/>
 <part name="V55" library="supply2" deviceset="VCC" device=""/>
 <part name="GND104" library="supply1" deviceset="GND" device=""/>
 <part name="C6" library="rcl" deviceset="C-EU" device="075-032X103" value="0.47 uF"/>
@@ -20070,10 +20125,14 @@ high speed (Philips)</description>
 <part name="V12" library="supply2" deviceset="VCC" device=""/>
 <part name="GND115" library="supply1" deviceset="GND" device=""/>
 <part name="C68" library="rcl" deviceset="C-EU" device="075-032X103" value="0.1 uF"/>
+<part name="FRAME1" library="frames" deviceset="FRAME_D_L" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="104.14" y="-195.58" size="1.778" layer="94">Commodore C64 Rev A Replica Schematic
+Based on schematic done by Ruud Baltissen.
+Values and footprints corrected by Bo Herrmannsen</text>
 </plain>
 <instances>
 <instance part="U18" gate="P" x="76.2" y="-91.44"/>
@@ -20563,6 +20622,8 @@ high speed (Philips)</description>
 <instance part="GND115" gate="1" x="91.44" y="271.78"/>
 <instance part="C68" gate="G$1" x="101.6" y="289.56"/>
 <instance part="RP4" gate="B" x="-50.8" y="208.28"/>
+<instance part="FRAME1" gate="G$1" x="-223.52" y="-220.98"/>
+<instance part="FRAME1" gate="G$2" x="101.6" y="-220.98"/>
 </instances>
 <busses>
 <bus name="DATA:D[0..7]">
@@ -26772,4 +26833,10 @@ high speed (Philips)</description>
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
